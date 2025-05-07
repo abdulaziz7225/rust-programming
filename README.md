@@ -25,3 +25,11 @@ let b = &a;
 println!("a = {a}");
 println!("b = {b}");
 ```
+
+## Keep dead code and suppress the warning
+
+To keep the unused variants and suppress the warning, you can annotate part of your code with
+
+```rust
+#[allow(dead_code)]
+```
