@@ -6,6 +6,11 @@
 - `cargo run`- to run compiled binary
 - `cargo check`- to check your code to make sure it compiles but doesn’t produce an executable
 
+## Statements and Expressions
+
+- **Statements** are instructions that perform some action and do not return a value
+- **Expressions** evaluate to a resultant value
+
 ## Traditional vs Named Placeholder Syntax
 
 Traditional Placeholder Syntax `{}` was introduced in Rust 1.0
