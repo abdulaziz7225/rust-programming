@@ -38,3 +38,23 @@ To keep the unused variants and suppress the warning, you can annotate part of y
 ```rust
 #[allow(dead_code)]
 ```
+
+## Using nested paths to clean up large `use` lists
+
+```rust
+use std::cmp::Ordering;
+use std::io;
+
+// Combining two use statements that share a subpath
+use std::io;
+use std::io::Write;
+```
+
+Instead of the multiple lines in the example above, we can use nested paths to bring the same items into scope with one line
+
+```rust
+use std::{cmp::Ordering, io};
+
+// Combining two use statements that share a subpath
+use std::io::{self, Write};
+```
