@@ -1,6 +1,6 @@
 # Ownership and Borrowing
 
-## Keywords/Constructs that Take Ownership by Default:
+## Keywords/Constructs that Take Ownership by Default
 
 1. `match` **expressions** (for non-reference patterns)
 
@@ -58,7 +58,7 @@ borrow_only( & s);      // s is borrowed
 // s is still valid here
 ```
 
-## Keywords/Constructs that Capture by Reference by Default:
+## Keywords/Constructs that Capture by Reference by Default
 
 1. **Closures** (unless `move` is used)
 
@@ -93,4 +93,3 @@ let x = String::from("hello");
 let y = & x;  // Reference to x
 println!("{}, {}", x, y); // Both x and y are valid
 ```
-
