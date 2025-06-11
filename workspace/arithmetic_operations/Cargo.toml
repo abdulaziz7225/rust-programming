@@ -1,0 +1,10 @@
+[package]
+name = "arithmetic_operations"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+addition = { path = "../addition" }
+division = { path = "../division" }
+multiplication = { path = "../multiplication" }
+subtraction = { path = "../subtraction" }

@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = [ "addition","arithmetic_operations", "division", "multiplication", "subtraction"]
